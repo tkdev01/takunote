@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VM on Taku Note</title>
+    <link>https://tkdev01.github.io/takunote/categories/vm/</link>
+    <description>Recent content in VM on Taku Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tkdev01.github.io/takunote/categories/vm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VirtualBox 仮想ディスクの圧縮</title>
+      <link>https://tkdev01.github.io/takunote/blog/vm/</link>
+      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tkdev01.github.io/takunote/blog/vm/</guid>
+      <description>VirtualBox：仮想ディスクの圧縮(vmdkファイル圧縮したい方向け) Vagrant+VirtualBox(Winsows10)の使用で仮想ディスクのサイズが膨れ上がってきたので、 ダイエット開始。
+流れ 【ゲストOS側】
+1. ディスククリーンアップ
+2. ドライブの空き領域を0埋め
+【ホストOS側】
+ファイル形式がVDIの場合
+1. VBoxManageコマンドで仮想ドライブの圧縮
+ファイル形式がVMDKの場合 1. vmdkをvdiに変換
+2. vdiファイル圧縮
+3. 圧縮されたvdiファイルをvmdkに変換
+4. 設定
+5. 既存ファイルの削除
+注意 スナップショットを撮っている場合はこの方法はあまり効果がありません。 可能であればスナップショットを削除することをおすすめします。
+参考：VirtualBoxのスナップショット使用時は肥大化するディスク容量に気をつけられたし
+【ゲストOS作業】  ディスククリーンアップを利用する。
+参考：WindowWindowsのディスククリーンアップの使い方
+ SDeleteのダウンロード(Linuxの場合は不要　ddコマンド使用)
+OSがファイルを削除する場合、実際にはファイルのインデックス情報を削除するだけで、 ファイル自体は削除されないそうです。SDeleteツールを用いれば、仮想ディスクの空き領域を0埋めすることができます。
+SDelete
+ zipファイルを展開し、そのディレクトリでコマンドプロンプトを開き、以下コマンドを入力
+結構時間がかかります。(´・ω・｀)
+  #Cドライブの空き領域を0埋めする ＃x86 sdelete.exe -z C: ＃x64 sdelete64.exe -z C: #linux ddコマンド使用 $ dd if=/dev/zero of=zero bs=4k; \rm zero  完了したら、仮想OSのシャットダウン。 ホストOS作業手順を実行する。
+【ホストOS作業】 以下の圧縮作業にはVBoxManageコマンドを使用します。 1. 圧縮する仮想ドライブのUUID取得
+「C:\Program Files\Oracle\VirtualBox」でコマンドプロンプトを開き、以下のコマンドを入力。</description>
+    </item>
+    
+  </channel>
+</rss>
