@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Taku Note</title>
+    <title>Categories on Taku Note</title>
     <link>https://tkdev01.github.io/takunote/categories/</link>
-    <description>Recent content on Taku Note</description>
+    <description>Recent content in Categories on Taku Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
@@ -12,43 +12,44 @@
     
     
     <item>
-      <title>Fancy App 1</title>
-      <link>https://tkdev01.github.io/takunote/itemized/item1/</link>
+      <title></title>
+      <link>https://tkdev01.github.io/takunote/categories/</link>
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://tkdev01.github.io/takunote/itemized/item1/</guid>
-      <description> App 1 </description>
+      <guid>https://tkdev01.github.io/takunote/categories/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 2</title>
-      <link>https://tkdev01.github.io/takunote/itemized/item2/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Go</title>
+      <link>https://tkdev01.github.io/takunote/categories/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tkdev01.github.io/takunote/itemized/item2/</guid>
-      <description> App 2 </description>
+      <guid>https://tkdev01.github.io/takunote/categories/go/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 3</title>
-      <link>https://tkdev01.github.io/takunote/itemized/item3/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Hugo</title>
+      <link>https://tkdev01.github.io/takunote/categories/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tkdev01.github.io/takunote/itemized/item3/</guid>
-      <description> App 3 </description>
+      <guid>https://tkdev01.github.io/takunote/categories/hugo/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 4</title>
-      <link>https://tkdev01.github.io/takunote/itemized/item4/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Jekyll</title>
+      <link>https://tkdev01.github.io/takunote/categories/jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://tkdev01.github.io/takunote/itemized/item4/</guid>
-      <description> App 4 </description>
+      <guid>https://tkdev01.github.io/takunote/categories/jekyll/</guid>
+      <description></description>
     </item>
     
-  </channel>
-</rss>ttps://tkdev01.github.io/takunote/categories/nuxt.js/</link>
+    <item>
+      <title>Nuxt.js</title>
+      <link>https://tkdev01.github.io/takunote/categories/nuxt.js/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://tkdev01.github.io/takunote/categories/nuxt.js/</guid>
