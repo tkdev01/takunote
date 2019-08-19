@@ -10,27 +10,34 @@
              "@type": "WebPage",
              "@id": "https://tkdev01.github.io/takunote/"
         },
-        "articleSection" : "itemized",
-        "name" : "Fancy App 2",
-        "headline" : "Fancy App 2",
-        "description" : "Application for doing cool things.",
+        "articleSection" : "blog",
+        "name" : "DockerにNuxt.js環境構築",
+        "headline" : "DockerにNuxt.js環境構築",
+        "description" : "自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。
+環境
+ Mac Mojave 10.14.6 Docker version 19.03.1, build 74b1e89 docker-compose version 1.24.1, build 4667896b  最終的なディレクトリ構成
+Root ├── docker-compose.yml └── web ├── Dockerfile └── app ├── Nuxt.jsのソース ├── ...  準備 - Docker For Macのインストール こちらから Docker For Macのインストール
+※インストール方法に関してはドキュメントを参照ください。
+Docker For Macをインストール後、「Docker is Running」となれば準備完了
+作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2017",
-        "datePublished": "2017-06-22 00:00:00 &#43;0000 UTC",
-        "dateModified" : "2017-06-22 00:00:00 &#43;0000 UTC",
-        "url" : "https://tkdev01.github.io/takunote/itemized/item2/",
-        "wordCount" : "2",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-08-19 00:00:00 &#43;0000 UTC",
+        "dateModified" : "2019-08-19 00:00:00 &#43;0000 UTC",
+        "url" : "https://tkdev01.github.io/takunote/blog/nuxt-docker/",
+        "wordCount" : "436",
         "keywords" : [ "Blog" ]
     }
     </script>
         
             
-                <title>Fancy App 2</title>
+                <title>DockerにNuxt.js環境構築</title>
             
         
 
@@ -41,36 +48,59 @@
 
 
         
-            <meta name="author" content="George Jetson">
+            <meta name="author" content="Taku">
         
         
-            <meta name="description" content="Application for doing cool things.">
+            
+                <meta name="description" content="HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo">
+            
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fancy App 2"/>
-<meta name="twitter:description" content="Application for doing cool things."/>
+<meta name="twitter:title" content="DockerにNuxt.js環境構築"/>
+<meta name="twitter:description" content="自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。
+環境
+ Mac Mojave 10.14.6 Docker version 19.03.1, build 74b1e89 docker-compose version 1.24.1, build 4667896b  最終的なディレクトリ構成
+Root ├── docker-compose.yml └── web ├── Dockerfile └── app ├── Nuxt.jsのソース ├── ...  準備 - Docker For Macのインストール こちらから Docker For Macのインストール
+※インストール方法に関してはドキュメントを参照ください。
+Docker For Macをインストール後、「Docker is Running」となれば準備完了
+作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0."/>
 <meta name="twitter:site" content="@example"/>
 
-        <meta property="og:title" content="Fancy App 2" />
-<meta property="og:description" content="Application for doing cool things." />
+        <meta property="og:title" content="DockerにNuxt.js環境構築" />
+<meta property="og:description" content="自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。
+環境
+ Mac Mojave 10.14.6 Docker version 19.03.1, build 74b1e89 docker-compose version 1.24.1, build 4667896b  最終的なディレクトリ構成
+Root ├── docker-compose.yml └── web ├── Dockerfile └── app ├── Nuxt.jsのソース ├── ...  準備 - Docker For Macのインストール こちらから Docker For Macのインストール
+※インストール方法に関してはドキュメントを参照ください。
+Docker For Macをインストール後、「Docker is Running」となれば準備完了
+作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://tkdev01.github.io/takunote/itemized/item2/" />
-<meta property="article:published_time" content="2017-06-22T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-06-22T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://tkdev01.github.io/takunote/blog/nuxt-docker/" />
+<meta property="article:published_time" content="2019-08-19T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-08-19T00:00:00&#43;00:00"/>
 
         <meta property="og:image" content="https://tkdev01.github.io/takunote//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         
-<meta itemprop="name" content="Fancy App 2">
-<meta itemprop="description" content="Application for doing cool things.">
+<meta itemprop="name" content="DockerにNuxt.js環境構築">
+<meta itemprop="description" content="自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。
+環境
+ Mac Mojave 10.14.6 Docker version 19.03.1, build 74b1e89 docker-compose version 1.24.1, build 4667896b  最終的なディレクトリ構成
+Root ├── docker-compose.yml └── web ├── Dockerfile └── app ├── Nuxt.jsのソース ├── ...  準備 - Docker For Macのインストール こちらから Docker For Macのインストール
+※インストール方法に関してはドキュメントを参照ください。
+Docker For Macをインストール後、「Docker is Running」となれば準備完了
+作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.">
 
 
-<meta itemprop="datePublished" content="2017-06-22T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2017-06-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2">
+<meta itemprop="datePublished" content="2019-08-19T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-19T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="436">
 
 
 
@@ -117,7 +147,7 @@
     
 <header id="header">
     
-      <h1><a href="https://tkdev01.github.io/takunote/">itemized</a></h1>
+      <h1><a href="https://tkdev01.github.io/takunote/">blog</a></h1>
     
 
     <nav class="links">
@@ -283,9 +313,6 @@
 
 
   
-  
-    
-  
 
 
         
@@ -321,9 +348,6 @@
 
 
 
-  
-  
-    
   
 
 
@@ -361,6 +385,9 @@
 
 
   
+  
+    
+  
 
 
         
@@ -368,7 +395,7 @@
         
 
         <a href="https://tkdev01.github.io/takunote/blog/goisforlovers/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/img//pic02.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2014/04/pic02.jpg" alt="">
         </a>
     
 
@@ -397,6 +424,9 @@
 
 
   
+  
+    
+  
 
 
         
@@ -404,7 +434,7 @@
         
 
         <a href="https://tkdev01.github.io/takunote/blog/hugoisforlovers/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/img//pic01.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2014/04/pic01.jpg" alt="">
         </a>
     
 
@@ -449,7 +479,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;text=Fancy%20App%202&amp;via=example" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;text=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89&amp;via=example" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -459,7 +489,7 @@
 
 
 <li>
-  <a href="//plus.google.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn google-plus">
+  <a href="//plus.google.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
   </a>
@@ -470,7 +500,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -480,7 +510,7 @@
 
 
 <li>
-  <a href="//reddit.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn reddit">
+  <a href="//reddit.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
   </a>
@@ -490,7 +520,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -500,7 +530,7 @@
 
 
 <li>
-  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn stumbleupon">
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
   </a>
@@ -510,7 +540,7 @@
 
 
 <li>
-  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;description=Fancy%20App%202" target="_blank" class="share-btn pinterest">
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;description=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn pinterest">
     <i class="fa fa-pinterest-p"></i>
     <p>Pinterest</p>
   </a>
@@ -520,7 +550,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by George%20Jetson&amp;body=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by Taku&amp;body=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -539,20 +569,20 @@
   <header>
     <div class="title">
         
-            <h1><a href="https://tkdev01.github.io/takunote/itemized/item2/">Fancy App 2</a></h1>
+            <h1><a href="https://tkdev01.github.io/takunote/blog/nuxt-docker/">DockerにNuxt.js環境構築</a></h1>
             
         
         
-            <p>Application for doing cool things.</p>
-        
     </div>
     <div class="meta">
+        
 
-      <span class="author">George Jetson</span>
-      <span class="author">Golang</span>
-      
-        <a href="#" target="_blank"></a>
-      
+        <time class="published"
+            datetime='2019-08-19'>
+            August 19, 2019</time>
+        <span class="author">Taku</span>
+        
+        
     </div>
 </header>
 
@@ -565,7 +595,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;text=Fancy%20App%202&amp;via=example" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;text=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89&amp;via=example" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -575,7 +605,7 @@
 
 
 <li>
-  <a href="//plus.google.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn google-plus">
+  <a href="//plus.google.com/share?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
   </a>
@@ -586,7 +616,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -596,7 +626,7 @@
 
 
 <li>
-  <a href="//reddit.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn reddit">
+  <a href="//reddit.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
   </a>
@@ -606,7 +636,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -616,7 +646,7 @@
 
 
 <li>
-  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;title=Fancy%20App%202" target="_blank" class="share-btn stumbleupon">
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;title=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
   </a>
@@ -626,7 +656,7 @@
 
 
 <li>
-  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f&amp;description=Fancy%20App%202" target="_blank" class="share-btn pinterest">
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f&amp;description=Docker%e3%81%abNuxt.js%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89" target="_blank" class="share-btn pinterest">
     <i class="fa fa-pinterest-p"></i>
     <p>Pinterest</p>
   </a>
@@ -636,7 +666,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by George%20Jetson&amp;body=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fitemized%2fitem2%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by Taku&amp;body=https%3a%2f%2ftkdev01.github.io%2ftakunote%2fblog%2fnuxt-docker%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -648,47 +678,354 @@
   
 
   
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="https://tkdev01.github.io/takunote/blog/nuxt-docker/" class="image featured">
+            <img src="https://tkdev01.github.io/takunote/img/2019/08/pic02.jpg" alt="">
+        </a>
+    
+
+
   <div id="content">
     
 
-<h2 id="app-2">App 2</h2>
+<p>自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。</p>
+
+<p>環境</p>
+
+<ul>
+<li>Mac Mojave 10.14.6</li>
+<li>Docker version 19.03.1, build 74b1e89</li>
+<li>docker-compose version 1.24.1, build 4667896b</li>
+</ul>
+
+<p>最終的なディレクトリ構成</p>
+
+<pre><code>Root
+├── docker-compose.yml
+└── web
+    ├── Dockerfile
+    └── app
+        ├── Nuxt.jsのソース
+        ├── ...
+</code></pre>
+
+<h2 id="準備-docker-for-macのインストール">準備 - Docker For Macのインストール</h2>
+
+<p><a href="https://www.docker.com/products/docker-desktop">こちら</a>から
+Docker For Macのインストール<br />
+※インストール方法に関しては<a href="https://docs.docker.com/docker-for-mac/install/">ドキュメント</a>を参照ください。</p>
+
+<p>Docker For Macをインストール後、「Docker is Running」となれば準備完了</p>
+
+<h2 id="作業ディレクトリを作成">作業ディレクトリを作成</h2>
+
+<pre><code>$ mkdir -p [プロジェクト名]/web/app
+$ cd [プロジェクト名]/web
+</code></pre>
+
+<h2 id="dockerfileの作成">Dockerfileの作成</h2>
+
+<p>Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。</p>
+
+<pre><code>$ vim Dockerfile
+-- 下記を記載
+
+FROM node:10.11.0-alpine
+ 
+RUN apk update &amp;amp;&amp;amp; \
+    apk add git &amp;amp;&amp;amp; \
+    npm install -g npm &amp;amp;&amp;amp; \
+    npm install -g vue-cli &amp;amp;&amp;amp; \
+    npm install -g nuxt &amp;amp;&amp;amp; \
+    npm install -g create-nuxt-app
+ENV HOST 0.0.0.0
+ 
+WORKDIR /app
+
+# 下記は後でコメントアウトを外します
+# RUN yarn install
+
+# EXPOSE 3000
+# CMD [&quot;yarn&quot;, &quot;run&quot;, &quot;dev&quot;]
+</code></pre>
+
+<p>Dockerhubにあるnode:10.11.0-alpineをベースにnuxt.jsをインストールしたイメージを作成します。</p>
+
+<p>※Dockerfileの書き方については<a href="http://docs.docker.jp/engine/reference/builder.html#id3">ドキュメント</a>を参照ください。</p>
+
+<h2 id="docker-compose-ymlの作成">docker-compose.ymlの作成</h2>
+
+<p>Docker compose とは、複数のコンテナから成るサービスを構築・実行する手順を自動的にし、管理を容易にする機能です。</p>
+
+<p>docker-compose.ymlにはDockerの起動定義を記述します。</p>
+
+<pre><code>$ cd ../
+$ vim docker-compose.yml
+--- 下記を記載
+version: &quot;3&quot;
+services:
+  web: 
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    privileged: true
+    volumes:
+      - &quot;./web/app:/app&quot; 
+      # exclude volumes
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    container_name: &quot;nuxt-sample&quot; # Name the container
+    tty: true
+    stdin_open: true
+</code></pre>
+
+<p>※docker-compose.ymlの記述方法については<a href="https://docs.docker.com/compose/compose-file/">Docker docs</a>を参照ください。</p>
+
+<h2 id="nuxt-jsの構築">Nuxt.jsの構築</h2>
+
+<h3 id="コンテナ作成">コンテナ作成</h3>
+
+<p>まずはイメージをビルドします。</p>
+
+<pre><code>$ docker-compose build
+</code></pre>
+
+<p>次に、コンテナを起動します。</p>
+
+<pre><code>$ docker-compose up -d
+</code></pre>
+
+<p>Nuxt.js環境を構築するため、Dockerコンテナ内に入ります。</p>
+
+<pre><code>$ docker-compose exec web sh
+</code></pre>
+
+<p>下記コマンドでNuxt.jsを展開します。<br />
+※コンテナ内</p>
+
+<pre><code># create-nuxt-app .
+</code></pre>
+
+<p>コマンド入力後、色々聞かれますのでこちらを参考に必要なものを取り入れてください。</p>
+
+<pre><code>create-nuxt-app v2.9.2
+✨  Generating Nuxt.js project in .
+? Project name nuxt-sample
+? Project description sample
+? Author name sample
+? Choose the package manager Yarn
+? Choose UI framework Bootstrap Vue
+? Choose custom server framework None (Recommended)
+? Choose Nuxt.js modules (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+? Choose linting tools (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+? Choose test framework None
+? Choose rendering mode Universal (SSR)
+</code></pre>
+
+<p>Nuxt.jsの展開は完了です。<br />
+docker-compose.ymlに書いてあるVolumesの設定により、ホストのappにもソースコードが同期されたと思います。(node_modulesは同期しないように設定しています。)</p>
+
+<h3 id="プロジェクト起動">プロジェクト起動</h3>
+
+<p>今回、Choose the package managerでyarnを選択したため、下記コマンドで必要パッケージをインストールします。<br />
+※コンテナ内</p>
+
+<pre><code># yarn install
+</code></pre>
+
+<p>パッケージインストール後、起動します。<br />
+※コンテナ内</p>
+
+<pre><code># yarn run dev
+</code></pre>
+
+<p>起動後、<code>Ctrl + P + Q</code>でコンテナから抜けます。</p>
+
+<p>localhost:3000にアクセス！！</p>
+
+<pre><code>$ open http://localhost:3000/
+</code></pre>
+
+<p>確認後、コンテナを終了します。</p>
+
+<pre><code>$ docker-compose down
+</code></pre>
+
+<h2 id="dockerfileの修正">Dockerfileの修正</h2>
+
+<p>この環境を構築する際に必要なパッケージインストールコマンドと、docker-compose upの際にnuxt.jsを起動するコマンドを追加します。</p>
+
+<pre><code>$ vim web/Dockerfile
+---
+
+~省略~
+
+# 下記は後でコメントアウトを外します
+RUN yarn install
+
+EXPOSE 3000
+CMD [&quot;yarn&quot;, &quot;run&quot;, &quot;dev&quot;]
+</code></pre>
+
+<p>下記コマンドでDockerを再構築します。</p>
+
+<pre><code>$ docker-compose build
+</code></pre>
+
+<p>再構築後、起動します。</p>
+
+<pre><code># コンテナ起動
+$ docker-compose up -d
+
+# サーバーの状態確認
+$ docker-compose ps
+
+# アクセス
+$ open http://localhost:3000/
+</code></pre>
+
+<p>DockerにNuxt.js環境構築は以上です。<br />
+以降はこの環境を第三者が利用する方法について記載しています。</p>
+
+<h2 id="gitからcloneして開発を行う場合">Gitからcloneして開発を行う場合</h2>
+
+<p>今回構築した環境を<a href="https://github.com/tkdev01/nuxt-docker">こちらのリポジトリ</a>に上げておきました。</p>
+
+<pre><code># コード配置
+$ git clone https://github.com/tkdev01/nuxt-docker
+$ cd nuxt-docker
+
+# dockerイメージを構築する
+$ docker-compose build
+
+# コンテナを起動する
+$ docker-compose up -d
+
+# サーバーの状態確認
+$ docker-compose ps
+
+# アクセス
+$ open http://localhost:3000/
+</code></pre>
+
+<h2 id="ビルド時にno-space-left-on-deviceエラーが発生した場合">ビルド時にno space left on deviceエラーが発生した場合</h2>
+
+<h3 id="hddの問題でないことを確認">HDDの問題でないことを確認</h3>
+
+<p><code>df -h</code>で空き容量を確認します。</p>
+
+<h3 id="イメージの削除">イメージの削除</h3>
+
+<p>ビルドを繰り返してできた不要な領域は下記コマンドで削除</p>
+
+<pre><code># コンテナをすべて削除
+$ docker rm -f $(docker ps -aq)
+
+# イメージをすべて削除
+$ docker rmi -f $(docker images -q)
+
+# ボリュームをすべて削除
+$ docker volume rm -f $(docker volume ls -q)
+
+〜個別削除は以下を参照〜
+
+# 全コンテナ表示
+$ docker ps -a
+# id指定して削除する場合
+$ docker rm container_id
+ 
+# 全イメージ表示
+$ docker images
+# id指定して削除する場合
+$ docker rmi image_id
+</code></pre>
+
+<h2 id="参考">参考</h2>
+
+<p><a href="https://qiita.com/reflet/items/e7c33f84ab43ab237ee4">https://qiita.com/reflet/items/e7c33f84ab43ab237ee4</a></p>
+
+<p><a href="https://goodforthree.com/nuxt-docker/">https://goodforthree.com/nuxt-docker/</a></p>
 
   </div>
 
   <footer>
     <ul class="stats">
-    
+  <li class="categories">
+    <ul>
         
-
-        
-        
-            <li>
+            
+            
+                <i class="fa fa-folder"></i>
                 
                 
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Category
-                    
+                <li><a class="article-category-link" href="https://tkdev01.github.io/takunote/categories/nuxt.js">Nuxt.js</a></li>
                 
-            </li>
+            
         
-    
-
-    
-    
-        <li><a href='https://tkdev01.github.io/takunote/categories/'></a></li>
-    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
 </ul>
 
   </footer>
+
 </article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="https://tkdev01.github.io/takunote/blog/vm/"
+                class="button big previous">VirtualBox 仮想ディスクの圧縮</a></li>
+    
+
+    
+</ul>
 
 
     </div>

@@ -6,10 +6,26 @@
     <description>Recent content on Taku Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tkdev01.github.io/takunote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DockerにNuxt.js環境構築</title>
+      <link>https://tkdev01.github.io/takunote/blog/nuxt-docker/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://tkdev01.github.io/takunote/blog/nuxt-docker/</guid>
+      <description>自分の環境を汚すことなく、DockerでNuxt.jsの環境を構築します。
+環境
+ Mac Mojave 10.14.6 Docker version 19.03.1, build 74b1e89 docker-compose version 1.24.1, build 4667896b  最終的なディレクトリ構成
+Root ├── docker-compose.yml └── web ├── Dockerfile └── app ├── Nuxt.jsのソース ├── ...  準備 - Docker For Macのインストール こちらから Docker For Macのインストール
+※インストール方法に関してはドキュメントを参照ください。
+Docker For Macをインストール後、「Docker is Running」となれば準備完了
+作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;amp;&amp;amp;amp; \ apk add git &amp;amp;amp;&amp;amp;amp; \ npm install -g npm &amp;amp;amp;&amp;amp;amp; \ npm install -g vue-cli &amp;amp;amp;&amp;amp;amp; \ npm install -g nuxt &amp;amp;amp;&amp;amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.</description>
+    </item>
     
     <item>
       <title>VirtualBox 仮想ディスクの圧縮</title>
