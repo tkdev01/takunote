@@ -24,7 +24,7 @@ Root ├── docker-compose.yml └── web ├── Dockerfile └── a
 ※インストール方法に関してはドキュメントを参照ください。
 Docker For Macをインストール後、「Docker is Running」となれば準備完了
 作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
-$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;amp;&amp;amp;amp; \ apk add git &amp;amp;amp;&amp;amp;amp; \ npm install -g npm &amp;amp;amp;&amp;amp;amp; \ npm install -g vue-cli &amp;amp;amp;&amp;amp;amp; \ npm install -g nuxt &amp;amp;amp;&amp;amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.</description>
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g @vue/cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.</description>
     </item>
     
   </channel>

@@ -52,11 +52,11 @@ $ vim Dockerfile
 
 FROM node:10.11.0-alpine
  
-RUN apk update &amp;&amp; \
-    apk add git &amp;&amp; \
-    npm install -g npm &amp;&amp; \
-    npm install -g vue-cli &amp;&amp; \
-    npm install -g nuxt &amp;&amp; \
+RUN apk update && \
+    apk add git && \
+    npm install -g npm && \
+    npm install -g @vue/cli && \
+    npm install -g nuxt && \
     npm install -g create-nuxt-app
 ENV HOST 0.0.0.0
  

@@ -20,7 +20,7 @@ Root ├── docker-compose.yml └── web ├── Dockerfile └── a
 ※インストール方法に関してはドキュメントを参照ください。
 Docker For Macをインストール後、「Docker is Running」となれば準備完了
 作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
-$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.",
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;&amp; \ apk add git &amp;&amp; \ npm install -g npm &amp;&amp; \ npm install -g @vue/cli &amp;&amp; \ npm install -g nuxt &amp;&amp; \ npm install -g create-nuxt-app ENV HOST 0.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -65,7 +65,7 @@ Root ├── docker-compose.yml └── web ├── Dockerfile └── a
 ※インストール方法に関してはドキュメントを参照ください。
 Docker For Macをインストール後、「Docker is Running」となれば準備完了
 作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
-$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0."/>
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;&amp; \ apk add git &amp;&amp; \ npm install -g npm &amp;&amp; \ npm install -g @vue/cli &amp;&amp; \ npm install -g nuxt &amp;&amp; \ npm install -g create-nuxt-app ENV HOST 0."/>
 <meta name="twitter:site" content="@example"/>
 
         <meta property="og:title" content="DockerにNuxt.js環境構築" />
@@ -76,7 +76,7 @@ Root ├── docker-compose.yml └── web ├── Dockerfile └── a
 ※インストール方法に関してはドキュメントを参照ください。
 Docker For Macをインストール後、「Docker is Running」となれば準備完了
 作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
-$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0." />
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;&amp; \ apk add git &amp;&amp; \ npm install -g npm &amp;&amp; \ npm install -g @vue/cli &amp;&amp; \ npm install -g nuxt &amp;&amp; \ npm install -g create-nuxt-app ENV HOST 0." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tkdev01.github.io/takunote/blog/nuxt-docker/" />
 <meta property="article:published_time" content="2019-08-19T00:00:00&#43;00:00"/>
@@ -95,7 +95,7 @@ Root ├── docker-compose.yml └── web ├── Dockerfile └── a
 ※インストール方法に関してはドキュメントを参照ください。
 Docker For Macをインストール後、「Docker is Running」となれば準備完了
 作業ディレクトリを作成 $ mkdir -p [プロジェクト名]/web/app $ cd [プロジェクト名]/web  Dockerfileの作成 Docker上で動作させるコンテナの構成情報を記述するためのファイルを作成します。
-$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;amp;&amp;amp; \ apk add git &amp;amp;&amp;amp; \ npm install -g npm &amp;amp;&amp;amp; \ npm install -g vue-cli &amp;amp;&amp;amp; \ npm install -g nuxt &amp;amp;&amp;amp; \ npm install -g create-nuxt-app ENV HOST 0.">
+$ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp;&amp; \ apk add git &amp;&amp; \ npm install -g npm &amp;&amp; \ npm install -g @vue/cli &amp;&amp; \ npm install -g nuxt &amp;&amp; \ npm install -g create-nuxt-app ENV HOST 0.">
 
 
 <meta itemprop="datePublished" content="2019-08-19T00:00:00&#43;00:00" />
@@ -313,9 +313,6 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
 
 
   
-  
-    
-  
 
 
         
@@ -323,7 +320,7 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
         
 
         <a href="https://tkdev01.github.io/takunote/blog/nuxt-docker/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/date/nuxt-docker.png" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2019/08/nuxt-docker.png" alt="">
         </a>
     
 
@@ -352,6 +349,9 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
 
 
   
+  
+    
+  
 
 
         
@@ -359,7 +359,7 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
         
 
         <a href="https://tkdev01.github.io/takunote/blog/vm/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/date/pic02.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2019/07/pic02.jpg" alt="">
         </a>
     
 
@@ -398,7 +398,7 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
         
 
         <a href="https://tkdev01.github.io/takunote/blog/goisforlovers/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/date/pic02.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2014/04/pic02.jpg" alt="">
         </a>
     
 
@@ -437,7 +437,7 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
         
 
         <a href="https://tkdev01.github.io/takunote/blog/hugoisforlovers/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/date2014/04/pic01.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2014/04/pic01.jpg" alt="">
         </a>
     
 
@@ -704,7 +704,7 @@ $ vim Dockerfile -- 下記を記載 FROM node:10.11.0-alpine RUN apk update &amp
         
 
         <a href="https://tkdev01.github.io/takunote/blog/nuxt-docker/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/img/2019/082019/08/nuxt-docker.png" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2019/08/nuxt-docker.png" alt="">
         </a>
     
 
@@ -756,11 +756,11 @@ $ cd [プロジェクト名]/web
 
 FROM node:10.11.0-alpine
  
-RUN apk update &amp;amp;&amp;amp; \
-    apk add git &amp;amp;&amp;amp; \
-    npm install -g npm &amp;amp;&amp;amp; \
-    npm install -g vue-cli &amp;amp;&amp;amp; \
-    npm install -g nuxt &amp;amp;&amp;amp; \
+RUN apk update &amp;&amp; \
+    apk add git &amp;&amp; \
+    npm install -g npm &amp;&amp; \
+    npm install -g @vue/cli &amp;&amp; \
+    npm install -g nuxt &amp;&amp; \
     npm install -g create-nuxt-app
 ENV HOST 0.0.0.0
  
@@ -1327,6 +1327,9 @@ $ docker rmi image_id
 
 
   
+  
+    
+  
 
 
         
@@ -1334,7 +1337,7 @@ $ docker rmi image_id
         
 
         <a href="https://tkdev01.github.io/takunote/blog/hugoisforlovers/" class="image featured">
-            <img src="https://tkdev01.github.io/takunote/date2014/04/pic01.jpg" alt="">
+            <img src="https://tkdev01.github.io/takunote/img/2014/04/pic01.jpg" alt="">
         </a>
     
 
