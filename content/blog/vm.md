@@ -60,7 +60,8 @@ sdelete.exe -z C:
 sdelete64.exe -z C:
 
 #linux ddコマンド使用
-$ dd if=/dev/zero of=zero bs=4k; \rm zero
+$ dd if=/dev/zero of=zero bs=4k; \
+  rm zero
 ```
 完了したら、仮想OSのシャットダウン。
 ホストOS作業手順を実行する。

@@ -54,9 +54,8 @@ OSがファイルを削除する場合、実際にはファイルのインデッ
 SDelete
  zipファイルを展開し、そのディレクトリでコマンドプロンプトを開き、以下コマンドを入力
 結構時間がかかります。(´・ω・｀)
-  #Cドライブの空き領域を0埋めする ＃x86 sdelete.exe -z C: ＃x64 sdelete64.exe -z C: #linux ddコマンド使用 $ dd if=/dev/zero of=zero bs=4k; \rm zero  完了したら、仮想OSのシャットダウン。 ホストOS作業手順を実行する。
-【ホストOS作業】 以下の圧縮作業にはVBoxManageコマンドを使用します。 1. 圧縮する仮想ドライブのUUID取得
-「C:\Program Files\Oracle\VirtualBox」でコマンドプロンプトを開き、以下のコマンドを入力。</description>
+  #Cドライブの空き領域を0埋めする ＃x86 sdelete.exe -z C: ＃x64 sdelete64.exe -z C: #linux ddコマンド使用 $ dd if=/dev/zero of=zero bs=4k; \ rm zero  完了したら、仮想OSのシャットダウン。 ホストOS作業手順を実行する。
+【ホストOS作業】 以下の圧縮作業にはVBoxManageコマンドを使用します。 1. 圧縮する仮想ドライブのUUID取得</description>
     </item>
     
     <item>
