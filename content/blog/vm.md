@@ -26,7 +26,7 @@ Vagrant+VirtualBox(Winsows10)の使用で仮想ディスクのサイズが膨れ
 ファイル形式が**VDI**の場合  
 1. VBoxManageコマンドで仮想ドライブの圧縮
 
-ファイル形式が**VMDK**の場合 
+ファイル形式が**VMDK**の場合  
 1. vmdkをvdiに変換  
 2. vdiファイル圧縮  
 3. 圧縮されたvdiファイルをvmdkに変換  
@@ -67,7 +67,7 @@ $ dd if=/dev/zero of=zero bs=4k; \
 ホストOS作業手順を実行する。
 
 ## 【ホストOS作業】
-以下の圧縮作業にはVBoxManageコマンドを使用します。
+以下の圧縮作業にはVBoxManageコマンドを使用します。  
 1. 圧縮する仮想ドライブのUUID取得  
 「C:\Program Files\Oracle\VirtualBox」でコマンドプロンプトを開き、以下のコマンドを入力。  
 
